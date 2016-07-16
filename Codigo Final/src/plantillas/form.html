@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block head_title %}CREATE{% endblock %}
+
+{% block content %}
+
+</br>
+<h1>Que vamos a comprar hoy?</h1>
+</br>
+
+<form method="POST", action="">
+	{% csrf_token %}
+
+	{{ form.as_p }}
+	<input type="submit" value="AGREGAR" />
+</form>
+
+{% endblock %}
